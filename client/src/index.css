@@ -2,3 +2,10 @@
   margin:0;
   padding:0;
 }
+/* Navigation */
+.navigation{
+  height:100px;
+  position: sticky;
+  top:0;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
