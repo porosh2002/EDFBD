@@ -10,16 +10,27 @@ export const Nav = styled.div`
   justify-content:space-between;
 `;
 //  Navigation Link
-
+const Link_common = `
+text-decoration:none;
+letter-spacing:.5px;
+&:hover {
+color:royalblue;
+}
+`
 export const LinkC = styled(Link)`
-    text-decoration:none;
+${Link_common}
     color:#343a40;
     font-size:15px;
     font-weight: 600;
-    letter-spacing:.5px;
-    &:hover {
-    color:royalblue;
-  }
+`;
+export const LinkCMob = styled(Link)`
+${Link_common}
+    color:#f7f7f7;
+    display:block;
+    font-size:19px;
+    text-align:center;
+    margin:15px 0px;
+    font-family: 'Josefin Sans', sans-serif;
 `;
 export const LI = styled.li`
 list-style:none;
@@ -30,4 +41,25 @@ justify-content:space-between;
 width:800px;
 align-items:center;
 margin-right:30px;
+`;
+// Mobile Menu 
+export const MobileMenu = styled.div`
+height:100%;
+width:100vw;
+position:fixed;
+top:0;
+`;
+export const Content = styled.div`
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+`;
+export const MenuTimes = styled.div`
+color:#f7f7f7;
+right:50px;
+position:absolute;
+top:50px;
+font-size:25px;
+color:#dfdfdf;
 `;

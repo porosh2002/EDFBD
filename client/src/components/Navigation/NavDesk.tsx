@@ -9,8 +9,8 @@ export default class Navigation extends Component {
                     <img className='Logo' alt='EDFBD' src={LogoImage}></img>
                 </LinkC>
                     <UL>
-                        <LI><LinkC to='#'>Home</LinkC></LI>
-                        <LI><LinkC to='#'>About</LinkC></LI>
+                        <LI><LinkC to='/'>Home</LinkC></LI>
+                        <LI><LinkC to='/about'>About</LinkC></LI>
                         <LI><LinkC to='#'>Mission</LinkC></LI>
                         <LI><LinkC to='#'>Training</LinkC></LI>
                         <LI><LinkC to='#'>Events</LinkC></LI>
