@@ -10,6 +10,9 @@
   height: 90px;
 }
 @media screen and (max-width: 899px) {
+  /* .Slider{
+    height;
+  } */
   .LogoLink {
     margin: 5px 0px 0px 30px;
   }
@@ -26,6 +29,16 @@
   }
 }
 @media screen and (min-width: 900px) {
+  .Slider_Div{
+    background-color:#343a40a1;
+    height:100%;
+  }
+  .Slider{
+    height:700px;
+    background: url('./images/Slider_image.jpg');
+    background-position: center;
+    background-size: cover;
+  }
   .LogoLink {
     margin: 5px 0px 0px 70px;
   }

@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { Switch, Route } from "react-router-dom";
 import Navigation from './components/Navigation/Navigation'
+import Loader from './components/Loader/Loader'
 import Footer from './components/Footer/Footer';
-// import Loader from './components/Loader/Loader'
+const Home = React.lazy(() => import("./Pages/Home"));
 function App() {
   return(
     <div>
       <header>
       <Navigation />
       </header>
-      {/* <Loader /> */}
+      <Suspense fallback={<Loader />}>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            {/* <Route component={Error} /> */}
+          </Switch>
+        </Suspense>
+
       <footer>
       <Footer/>
       </footer>

@@ -3,8 +3,10 @@ import {Link} from 'react-router-dom'
 // Navigation
 export const Nav = styled.div`
   height:100px;
-  position: sticky;
+  width:100vw;
+  position:fixed;
   top:0;
+  background-color:#ffff;
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content:space-between;
