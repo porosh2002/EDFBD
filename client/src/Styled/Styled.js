@@ -63,3 +63,33 @@ top:50px;
 font-size:25px;
 color:#dfdfdf;
 `;
+// Footer
+export const Footer = styled.div`
+padding:50px 30px;
+background-color:#343a40;
+& :hover{
+  color:#f7f7f7
+}
+`;
+export const FooterContainer = styled.div`
+text-align:center;
+width:300px
+
+`
+export const FooterLink = styled(Link)`
+font-family: 'Josefin Sans', sans-serif;
+color:#cfcfcf;
+text-decoration:none;
+display:inline-block;
+margin:10px 5px;
+`;
+export const LoaderDiv = styled.div`
+height:100vh;
+width:100%;
+position:absolute;
+top:0px;
+background-color:#29303bbd;
+display:flex;
+align-items:center;
+justify-content:center;
+`;

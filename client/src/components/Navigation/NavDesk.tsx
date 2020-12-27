@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import LogoImage from '../../images/Logo.png';
 import {LinkC,LI,UL,Nav} from '../../Styled/Styled'
 export default class Navigation extends Component {
