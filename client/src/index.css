@@ -10,6 +10,20 @@
 .Logo{
   height:90px;
 }
-.LogoLink{
-  margin:6px 0px 0px 70px;
+@media screen and (max-width:899px){
+  .LogoLink{
+    margin:5px 0px 0px 30px;
+  }
+  .Bars{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: #444;
+  }
+}
+@media screen and (min-width:900px){
+  .LogoLink{
+    margin:5px 0px 0px 70px;
+  }
 }
