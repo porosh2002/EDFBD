@@ -1,8 +1,9 @@
 import { Component } from "react";
 import LogoImage from "../../images/Logo.png";
+import { connect } from 'react-redux'
 import { LinkC, LI, UL, Nav, NavDeskHidden } from "../../Styled/Styled";
 import { FaBars, FaRegTimesCircle } from "react-icons/fa";
-export default class Navigation extends Component {
+class Navigation extends Component {
   state = {
     navOpen: false,
   };
@@ -86,3 +87,14 @@ export default class Navigation extends Component {
     );
   }
 }
+const mapDispatchToProps = (dispatch) => {
+    return {
+      NotificationMenu: (status) => dispatch(setNotificationMenu(status)),
+    };
+};
+const mapStateToProps = (state) => {
+    return {
+      notification_menu: NotificationMenu(state),
+    };
+  };
+  export default connect(null, mapDispatchToProps)(Navigation);
