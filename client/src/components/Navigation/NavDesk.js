@@ -1,9 +1,10 @@
 import { Component } from "react";
 import LogoImage from "../../images/Logo.png";
+import {Link} from 'react-router-dom'
 import { NotificationMenu } from '../../Redux/NotificationMenu/nof_selector'
 import { setNotificationMenu } from "../../Redux/NotificationMenu/actions";
 import { connect } from 'react-redux'
-import { LinkC, LI, UL, Nav, NavDeskHidden } from "../../Styled/Styled";
+import { LinkC, LI, UL, Nav, NavDeskHidden,LI2 } from "../../Styled/Styled";
 import { FaBars} from "react-icons/fa";
 class Navigation extends Component {
   NavCall = () => {
@@ -13,34 +14,41 @@ class Navigation extends Component {
   render() {
     const { notification_menu } = this.props;
     const NavOpenStyle = notification_menu ? {} : { display: "none" };
-    const NavOpenStyleMargin = notification_menu ? { marginLeft: "250px" } : null;
+    const NavOpenStyleMargin = notification_menu ? { marginLeft: "250px",transition:".5s" } : null;
     return (
       <div>
         <NavDeskHidden style={NavOpenStyle} className="NavDeskLinkHam">
-          <LI>
+        <br></br>
+            <br></br>
+          <div style={{textAlign:"center"}}>
+            <Link className='LogInBtn_DeskNav' to='/'>Login</Link>
+          </div>
+            <br></br>
+            <br></br>
+          <LI2>
             <LinkC to="/">Home</LinkC>
-          </LI>
-          <LI>
+          </LI2>
+          <LI2>
             <LinkC to="/about">About</LinkC>
-          </LI>
-          <LI>
+          </LI2>
+          <LI2>
             <LinkC to="#">Mission</LinkC>
-          </LI>
-          <LI>
+          </LI2>
+          <LI2>
             <LinkC to="#">Training</LinkC>
-          </LI>
-          <LI>
+          </LI2>
+          <LI2>
             <LinkC to="#">Events</LinkC>
-          </LI>
-          <LI>
+          </LI2>
+          <LI2>
             <LinkC to="#">News</LinkC>
-          </LI>
-          <LI>
+          </LI2>
+          <LI2>
             <LinkC to="#">Donate</LinkC>
-          </LI>
-          <LI>
+          </LI2>
+          <LI2>
             <LinkC to="#">Become a Member</LinkC>
-          </LI>
+          </LI2>
         </NavDeskHidden>
         <Nav style={NavOpenStyleMargin}>
           <div onClick={this.NavCall} className="HamBurger">

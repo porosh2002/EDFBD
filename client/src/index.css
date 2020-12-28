@@ -18,14 +18,23 @@
     display: flex;
     align-items: center;
     margin-right: 30px;
-    color: #444;
+    color: #f7f7f7;
   }
-  /* .MobileMenu {
+  .MobileMenu {
     background: url("./images/black-linen.png");
     background-color: #343a40;
-  } */
+  }
 }
 @media screen and (min-width: 900px) {
+  .LogInBtn_DeskNav{
+    padding:15px 70px;
+    background-color:#fff;
+    font-size: 17px;
+    color: #343a40;
+    border-radius: 3px;
+    font-weight: 600;
+    text-decoration: none;
+  }
   .FocusBtnMenu {
     padding: 10px 15px;
     background-color: royalblue;
@@ -44,8 +53,9 @@
   }
   .NavDeskLinkHam{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 50px 0px;
+    text-align: left;
   }
   .NavDeskTimes{
     margin-left: 100%;
@@ -53,9 +63,6 @@
     color:#f7f7f7;
     font-size: 35px;
     cursor: pointer;
-  }
-  .NavDeskLinkHam li{
-    margin: 10px 0px;
   }
   .Slider_Div {
     background-color: #343a40a1;

@@ -15,7 +15,7 @@ const Home = React.lazy(() => import("./Pages/Home"));
   };
    render() {
     const { notification_menu } = this.props;
-    const NavOpenStyleMargin = notification_menu ? { marginLeft: "250px" } : {};
+    const NavOpenStyleMargin = notification_menu ? { marginLeft: "250px",transition:".5s" } : {};
     return (
       <div>
       <header>

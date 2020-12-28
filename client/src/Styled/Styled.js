@@ -50,6 +50,12 @@ color:#f7f7f7;
 export const LI = styled.li`
 list-style:none;
 `;
+export const LI2 = styled.li`
+list-style:none;
+background-color:#929cb933;
+padding:10px 15px;
+margin:1px 0px;
+`;
 export const UL = styled.ul`
 display:flex;
 justify-content:space-between;
@@ -59,26 +65,26 @@ margin-right:30px;
 margin-left:300px;
 `;
 // Mobile Menu 
-// export const MobileMenu = styled.div`
-// height:100%;
-// width:100vw;
-// position:fixed;
-// top:0;
-// `;
-// export const Content = styled.div`
-// position:absolute;
-// top:50%;
-// left:50%;
-// transform:translate(-50%,-50%);
-// `;
-// export const MenuTimes = styled.div`
-// color:#f7f7f7;
-// right:50px;
-// position:absolute;
-// top:50px;
-// font-size:25px;
-// color:#dfdfdf;
-// `;
+export const MobileMenu = styled.div`
+height:100%;
+width:100vw;
+position:fixed;
+top:0;
+`;
+export const Content = styled.div`
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+`;
+export const MenuTimes = styled.div`
+color:#f7f7f7;
+right:50px;
+position:absolute;
+top:50px;
+font-size:25px;
+color:#dfdfdf;
+`;
 // Footer
 export const Footer = styled.div`
 padding:50px 30px;
