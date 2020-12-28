@@ -13,9 +13,6 @@
   /* .Slider{
     height;
   } */
-  .LogoLink {
-    margin: 5px 0px 0px 30px;
-  }
   .Bars {
     font-size: 30px;
     display: flex;
@@ -29,13 +26,29 @@
   }
 }
 @media screen and (min-width: 900px) {
-  .Slider_Div{
-    background-color:#343a40a1;
-    height:100%;
+  .FocusBtnMenu {
+    padding: 10px 15px;
+    background-color: royalblue;
+    font-size: 13px !important;
+    color: #f7f7f7 !important;
+    border-radius: 3px;
   }
-  .Slider{
-    height:700px;
-    background: url('./images/Slider_image.jpg');
+  .FocusBtnMenu:hover {
+    color: #cfcfcf !important;
+  }
+  .HamBurger {
+    margin-left: 30px;
+    font-size: 25px;
+    color:#444;
+    cursor: pointer;
+  }
+  .Slider_Div {
+    background-color: #343a40a1;
+    height: 100%;
+  }
+  .Slider {
+    height: 700px;
+    background: url("./images/Slider_image.jpg");
     background-position: center;
     background-size: cover;
   }

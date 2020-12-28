@@ -10,6 +10,7 @@ export const Nav = styled.div`
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content:space-between;
+  align-items:center;
 `;
 //  Navigation Link
 const Link_common = `
@@ -19,6 +20,20 @@ letter-spacing:.5px;
 color:royalblue;
 }
 `
+export const NavDeskHiddenParrent = styled.div`
+height:100vh;
+position:fixed;
+top:100px;
+width:100%;
+background-color:#343a408a;
+`;
+export const NavDeskHidden = styled.div`
+height:100vh;
+position:fixed;
+top:100px;
+width:250px;
+background-color:#343a40;
+`;
 export const LinkC = styled(Link)`
 ${Link_common}
     color:#343a40;
@@ -40,7 +55,7 @@ list-style:none;
 export const UL = styled.ul`
 display:flex;
 justify-content:space-between;
-width:800px;
+width:350px;
 align-items:center;
 margin-right:30px;
 `;
