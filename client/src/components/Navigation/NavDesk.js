@@ -1,25 +1,22 @@
 import { Component } from "react";
 import LogoImage from "../../images/Logo.png";
+import { NotificationMenu } from '../../Redux/NotificationMenu/nof_selector'
+import { setNotificationMenu } from "../../Redux/NotificationMenu/actions";
 import { connect } from 'react-redux'
 import { LinkC, LI, UL, Nav, NavDeskHidden } from "../../Styled/Styled";
-import { FaBars, FaRegTimesCircle } from "react-icons/fa";
+import { FaBars} from "react-icons/fa";
 class Navigation extends Component {
-  state = {
-    navOpen: false,
-  };
   NavCall = () => {
-    this.setState({ navOpen: !this.state.navOpen });
+    const { notification_menu } = this.props;
+    this.props.NotificationMenu(!notification_menu);
   };
   render() {
-    const { navOpen } = this.state;
-    const NavOpenStyle = navOpen ? {} : { display: "none" };
-    const NavOpenStyleMargin = navOpen ? { marginLeft: "250px" } : null;
+    const { notification_menu } = this.props;
+    const NavOpenStyle = notification_menu ? {} : { display: "none" };
+    const NavOpenStyleMargin = notification_menu ? { marginLeft: "250px" } : null;
     return (
       <div>
         <NavDeskHidden style={NavOpenStyle} className="NavDeskLinkHam">
-          <div className="NavDeskTimes">
-            <FaRegTimesCircle />
-          </div>
           <LI>
             <LinkC to="/">Home</LinkC>
           </LI>
@@ -97,4 +94,4 @@ const mapStateToProps = (state) => {
       notification_menu: NotificationMenu(state),
     };
   };
-  export default connect(null, mapDispatchToProps)(Navigation);
+  export default connect(mapStateToProps, mapDispatchToProps)(Navigation);

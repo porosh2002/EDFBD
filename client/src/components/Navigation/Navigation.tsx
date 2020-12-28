@@ -1,6 +1,6 @@
 import React, { Component, Suspense } from "react";
-const NavDesk = React.lazy(() => import("./NavDesk"));
-const NavMob = React.lazy(() => import("./NavMob"));
+const NavDesk = React.lazy(() => import("./NavDesk.js"));
+const NavMob = React.lazy(() => import("./NavMob.js"));
 export default class Navigation extends Component {
     render() {  
     return (
