@@ -6,10 +6,9 @@ export const Nav = styled.div`
   width:100vw;
   position:fixed;
   top:0;
-  background-color:#ffff;
+  background-color:#c23934;
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   display: flex;
-  justify-content:space-between;
   align-items:center;
 `;
 //  Navigation Link
@@ -17,32 +16,31 @@ const Link_common = `
 text-decoration:none;
 letter-spacing:.5px;
 &:hover {
-color:royalblue;
+color:#cfcfcf;
 }
 `
-export const NavDeskHiddenParrent = styled.div`
-height:100vh;
+const NavDesk_common = `
+height:150vh;
 position:fixed;
-top:100px;
-width:100%;
-background-color:#343a408a;
-`;
+top:-100px;
+padding-bottom:100px;
+z-index:99999999;
+}
+`
 export const NavDeskHidden = styled.div`
-height:100vh;
-position:fixed;
-top:100px;
+ ${NavDesk_common}
 width:250px;
 background-color:#343a40;
 `;
 export const LinkC = styled(Link)`
 ${Link_common}
-    color:#343a40;
+color:#ffff;
     font-size:15px;
     font-weight: 600;
 `;
 export const LinkCMob = styled(Link)`
 ${Link_common}
-    color:#f7f7f7;
+color:#f7f7f7;
     display:block;
     font-size:19px;
     text-align:center;
@@ -55,9 +53,10 @@ list-style:none;
 export const UL = styled.ul`
 display:flex;
 justify-content:space-between;
-width:350px;
+width:650px;
 align-items:center;
 margin-right:30px;
+margin-left:300px;
 `;
 // Mobile Menu 
 export const MobileMenu = styled.div`

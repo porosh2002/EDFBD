@@ -10,6 +10,7 @@ function App() {
       <header>
       <Navigation />
       </header>
+      <div style={{marginLeft:"250px"}}>
       <Suspense fallback={<Loader />}>
           <Switch>
             <Route exact path="/" component={Home} />
@@ -20,6 +21,7 @@ function App() {
       <footer>
       <Footer/>
       </footer>
+</div>
     </div>
   );
 }

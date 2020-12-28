@@ -36,11 +36,25 @@
   .FocusBtnMenu:hover {
     color: #cfcfcf !important;
   }
-  .HamBurger {
+  .HamBurger{
     margin-left: 30px;
     font-size: 25px;
-    color:#444;
+    color:#fff;
     cursor: pointer;
+  }
+  .NavDeskLinkHam{
+    text-align: center;
+    padding: 50px 0px;
+  }
+  .NavDeskTimes{
+    margin-left: 100%;
+    margin-bottom:50px;
+    color:#f7f7f7;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .NavDeskLinkHam li{
+    margin: 10px 0px;
   }
   .Slider_Div {
     background-color: #343a40a1;
