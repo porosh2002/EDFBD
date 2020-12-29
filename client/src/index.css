@@ -7,7 +7,7 @@
 }
 /* Logo */
 .Logo {
-  height: 90px;
+  height: 65px;
 }
 @media screen and (max-width: 899px) {
   /* .Slider{
@@ -37,13 +37,13 @@
   }
   .FocusBtnMenu {
     padding: 10px 15px;
-    background-color: royalblue;
+    background-color:#fff;
     font-size: 13px !important;
-    color: #f7f7f7 !important;
+    color: #343a40 !important;
     border-radius: 3px;
   }
   .FocusBtnMenu:hover {
-    color: #cfcfcf !important;
+    background-color:#cfcfcf;
   }
   .HamBurger{
     margin-left: 30px;
@@ -76,5 +76,34 @@
   }
   .LogoLink {
     margin: 5px 0px 0px 70px;
+  }
+  /* Top Nav */
+  .topNav{
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: #F26522;
+  }
+  .TopIcons svg{
+      margin-top:05px;
+  }
+  .LinkTopMenu{
+    color: #F26522;
+    padding:0px 10px;
+    font-size:20px;
+    /* border-right: 1px solid #F26522; */
+    /* border-left: 1px solid #F26522; */
+  }
+  .LinkToptxt{
+    font-size:17px !important;
+    text-decoration: none;
+    margin-top:7px;
+    /* border-right: 1px solid transparent; */
   }
 }

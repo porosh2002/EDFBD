@@ -5,7 +5,8 @@ import { NotificationMenu } from '../../Redux/NotificationMenu/nof_selector'
 import { setNotificationMenu } from "../../Redux/NotificationMenu/actions";
 import { connect } from 'react-redux'
 import { LinkC, LI, UL, Nav, NavDeskHidden,LI2 } from "../../Styled/Styled";
-import { FaBars} from "react-icons/fa";
+import { FaBars,FaFacebookF,FaTwitter,FaYoutube,FaLinkedinIn } from "react-icons/fa";
+import {BiSearch} from 'react-icons/bi'
 class Navigation extends Component {
   NavCall = () => {
     const { notification_menu } = this.props;
@@ -50,7 +51,34 @@ class Navigation extends Component {
             <LinkC to="#">Become a Member</LinkC>
           </LI2>
         </NavDeskHidden>
-        <Nav style={NavOpenStyleMargin}>
+        <div style={NavOpenStyleMargin}>
+          <div className='topNav'>
+
+            <p>Defending Dignity. Fighting Poverty.</p>
+            <div style={{display:"flex"}}>
+            <div className='TopIcons'>
+              <Link className='LinkTopMenu' to='#'>
+              <BiSearch />
+              </Link>
+              <Link className='LinkTopMenu' to='#'>
+              <FaFacebookF />
+              </Link>
+              <Link className='LinkTopMenu' to='#'>
+              <FaTwitter />
+              </Link>
+              <Link className='LinkTopMenu' to='#'>
+              <FaYoutube />
+              </Link>
+              <Link className='LinkTopMenu' to='#'>
+              <FaLinkedinIn />
+              </Link>
+            </div>
+            <Link className='LinkTopMenu LinkToptxt' to='#'>
+              Contact us
+              </Link>
+</div>
+          </div>
+        <Nav style={{marginTop:"50px"}}>
           <div onClick={this.NavCall} className="HamBurger">
             <FaBars />
           </div>
@@ -88,6 +116,7 @@ class Navigation extends Component {
             </LI>
           </UL>
         </Nav>
+</div>
       </div>
     );
   }

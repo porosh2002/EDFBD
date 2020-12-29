@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom'
 // Navigation
 export const Nav = styled.div`
-  height:100px;
+  height:70px;
   width:100vw;
   position:fixed;
   top:0;
-  background-color:#c23934;
+  background-color:#F26522;
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items:center;
