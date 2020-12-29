@@ -104,6 +104,11 @@
     text-decoration: none;
     margin-top:7px;
   }
+  .FooterIcon{
+    font-size:20px;
+    margin-right: 5px;
+  color: #F26522;  
+}
 }
 /* Slider */
 .Slider_Div {
