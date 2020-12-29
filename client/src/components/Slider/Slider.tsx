@@ -1,14 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Content } from "../../Styled/Styled";
-import SwiperCore, { EffectFade,Autoplay } from "swiper";
+import SwiperCore, {Autoplay } from "swiper";
 import "swiper/swiper.scss";
 import { Link } from "react-router-dom";
-SwiperCore.use([EffectFade,Autoplay]);
+SwiperCore.use([Autoplay]);
 export default function Slider() {
   return (
     <div className='Slider_padding'>
       <Swiper
-        effect="fade"
         slidesPerView={1}
         loop={true}
         autoplay={{

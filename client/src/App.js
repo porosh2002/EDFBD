@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import Footer from './components/Footer/Footer';
 import { NotificationMenu } from "./Redux/NotificationMenu/nof_selector";
 const Home = React.lazy(() => import("./Pages/Home"));
+const Error = React.lazy(() => import("./Pages/404"));
  class App extends Component {
   state = {
     navOpen: false,
@@ -25,7 +26,7 @@ const Home = React.lazy(() => import("./Pages/Home"));
       <Suspense fallback={<Loader />}>
           <Switch>
             <Route exact path="/" component={Home} />
-            {/* <Route component={Error} /> */}
+            <Route component={Error} />
           </Switch>
         </Suspense>
 

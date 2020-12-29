@@ -187,3 +187,13 @@
   margin-right: 5px;
 color: #F26522;  
 }
+/* 404 */
+.DivError{
+  overflow: hidden;
+  background-color:#343a40e8;
+}
+.ImageError{
+  display: block;
+  margin:200px auto 100px auto;
+  height: 250px;
+}
