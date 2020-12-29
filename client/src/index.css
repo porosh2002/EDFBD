@@ -24,6 +24,15 @@
     background: url("./images/black-linen.png");
     background-color: #343a40;
   }
+  .FooterContainer{
+    display: block !important;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .FooterContent{
+    display: block !important;
+    margin: 0px auto;
+  }
 }
 @media screen and (min-width: 900px) {
   .Slider_padding{
@@ -104,11 +113,6 @@
     text-decoration: none;
     margin-top:7px;
   }
-  .FooterIcon{
-    font-size:20px;
-    margin-right: 5px;
-  color: #F26522;  
-}
 }
 /* Slider */
 .Slider_Div {
@@ -125,4 +129,10 @@
   font-size: 13px;
   color: #cfcfcf;
   margin:0px 30px;
+}
+/* Footer Icon */
+.FooterIcon{
+  font-size:20px;
+  margin-right: 5px;
+color: #F26522;  
 }

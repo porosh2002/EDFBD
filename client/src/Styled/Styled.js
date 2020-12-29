@@ -98,7 +98,7 @@ justify-content:space-around;
 `
 export const FooterContent = styled.div`
 padding:30px;
-height:200px;
+/* height:200px; */
 width:180px;
 `;
 export const FooterTitle = styled.p`

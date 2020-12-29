@@ -13,8 +13,8 @@ import {
 export default function FooterComponent() {
   return (
     <Footer>
-      <FooterContainer>
-        <FooterContent>
+      <FooterContainer className='FooterContainer'>
+        <FooterContent className='FooterContent'>
           <FooterTitle to="#">SITE MAP</FooterTitle>
           <FooterLink to="#">Home</FooterLink>
           <FooterLink to="#">About</FooterLink>
@@ -24,7 +24,7 @@ export default function FooterComponent() {
           <FooterLink to="#">News</FooterLink>
           <FooterLink to="#">Donate</FooterLink>
         </FooterContent>
-        <FooterContent>
+        <FooterContent className='FooterContent'>
           <FooterTitle>CONNECT WITH AJWS</FooterTitle>
           <FooterLink to="#">Facebook</FooterLink>
           <FooterLink to="#">Twitter</FooterLink>
@@ -32,11 +32,11 @@ export default function FooterComponent() {
           <FooterLink to="#">Linkedin</FooterLink>
           <FooterLink to="#">EDF Blog</FooterLink>
         </FooterContent>
-        <FooterContent>
+        <FooterContent className='FooterContent'>
           <FooterTitle>PRIVACY POLICY</FooterTitle>
           <FooterLink to="#">Privacy Policy</FooterLink>
         </FooterContent>
-        <FooterContent>
+        <FooterContent className='FooterContent'>
           <FooterTitle>CONTACT US</FooterTitle>
                   <div style={{ display: "flex",marginTop:"5px"}}>
             <div className="FooterIcon">
