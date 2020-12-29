@@ -10,9 +10,9 @@
   height: 65px;
 }
 @media screen and (max-width: 899px) {
-  /* .Slider{
-    height;
-  } */
+  .Slider {
+    height:300px;
+  }
   .Bars {
     font-size: 30px;
     display: flex;
@@ -70,9 +70,6 @@
   }
   .Slider {
     height: 700px;
-    background: url("./images/Slider_image.jpg");
-    background-position: center;
-    background-size: cover;
   }
   .LogoLink {
     margin: 5px 0px 0px 70px;
@@ -97,13 +94,20 @@
     color: #F26522;
     padding:0px 10px;
     font-size:20px;
-    /* border-right: 1px solid #F26522; */
-    /* border-left: 1px solid #F26522; */
   }
   .LinkToptxt{
     font-size:17px !important;
     text-decoration: none;
     margin-top:7px;
-    /* border-right: 1px solid transparent; */
   }
+}
+/* Slider */
+.Slider_Div {
+  background-color: #343a40a1;
+  height: 100%;
+}
+.Slider {
+  background: url("./images/Slider_image.jpg");
+  background-position: center;
+  background-size: cover;
 }
