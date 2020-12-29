@@ -10,6 +10,7 @@ export const Nav = styled.div`
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items:center;
+  z-index:999999999999;
 `;
 //  Navigation Link
 const Link_common = `
@@ -70,6 +71,7 @@ height:100%;
 width:100vw;
 position:fixed;
 top:0;
+z-index:999999999999;
 `;
 export const Content = styled.div`
 position:absolute;
@@ -94,17 +96,17 @@ background-color:#343a40;
 }
 `;
 export const FooterContainer = styled.div`
-text-align:center;
-width:300px
-
+display:flex;
+justify-content:space-around;
 `
-export const FooterLink = styled(Link)`
-font-family: 'Josefin Sans', sans-serif;
-color:#cfcfcf;
-text-decoration:none;
-display:inline-block;
-margin:10px 5px;
+export const FooterContent = styled(Link)`
+padding:30px;
+height:300px;
+width:300px;
+background-color:#cfcfcf78;
+border:1px solid #000;
 `;
+// Loading
 export const LoaderDiv = styled.div`
 height:100vh;
 width:100%;

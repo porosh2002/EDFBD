@@ -26,6 +26,9 @@
   }
 }
 @media screen and (min-width: 900px) {
+  .Slider_padding{
+    padding-top: 120px;
+  }
   .LogInBtn_DeskNav{
     padding:15px 70px;
     background-color:#fff;
@@ -86,6 +89,7 @@
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     color: #F26522;
+    z-index:999999999999;
   }
   .TopIcons svg{
       margin-top:05px;
