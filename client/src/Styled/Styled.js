@@ -98,14 +98,24 @@ justify-content:space-around;
 `
 export const FooterContent = styled.div`
 padding:30px;
-height:300px;
-width:300px;
+height:200px;
+width:180px;
 `;
 export const FooterTitle = styled.p`
 text-decoration:none !important;
-font-size:13px;
+font-size:15px;
 font-family: 'Josefin Sans', sans-serif;
-color:#f7f7f7;
+color:#F26522;
+/* color:#f7f7f7; */
+margin-bottom:20px;
+`;
+export const FooterLink = styled(Link)`
+font-family: 'Josefin Sans', sans-serif;
+display:block;
+margin:5px 0px 0px 2px;
+font-size:15px;
+color: #cfcfcf;
+text-decoration:none;
 `;
 // Loading
 export const LoaderDiv = styled.div`
