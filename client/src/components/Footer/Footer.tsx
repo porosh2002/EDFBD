@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { IoMailOutline } from "react-icons/io5";
 import { AiTwotonePhone } from 'react-icons/ai';
-import {BiMap} from 'react-icons/bi'
+import { BiMap } from 'react-icons/bi'
+import moment from 'moment'
 import {
   Footer,
   FooterContainer,
@@ -58,7 +59,7 @@ export default function FooterComponent() {
         </FooterContent>
       </FooterContainer>
       <p className="FooterCopyright">
-        © 2020 EDF All rights reserved.{" "}
+              © <span>{ moment().format('YYYY')}</span> EDF All rights reserved.{" "}
         <span style={{ color: "#dfdfdf" }}>
           Design and Developed by{" "}
           <span>
