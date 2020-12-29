@@ -91,20 +91,21 @@ color:#dfdfdf;
 export const Footer = styled.div`
 padding:50px 30px;
 background-color:#343a40;
-& :hover{
-  color:#f7f7f7
-}
 `;
 export const FooterContainer = styled.div`
 display:flex;
 justify-content:space-around;
 `
-export const FooterContent = styled(Link)`
+export const FooterContent = styled.div`
 padding:30px;
 height:300px;
 width:300px;
-background-color:#cfcfcf78;
-border:1px solid #000;
+`;
+export const FooterTitle = styled.p`
+text-decoration:none !important;
+font-size:13px;
+font-family: 'Josefin Sans', sans-serif;
+color:#f7f7f7;
 `;
 // Loading
 export const LoaderDiv = styled.div`
